@@ -41,6 +41,23 @@ let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 let seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
 
+// Stampo in pagina
+secondsElement.innerText = seconds;
+minutesElement.innerText = minutes;
+hoursElement.innerText = hours;
+daysElement.innerText = days;
+
+if(seconds < 10){
+    secondsElement.innerText = "0" + seconds;
+}else if (minutes < 10){
+    minutesElement.innerText = "0" + minutes;
+}else if (hours < 10){
+    hoursElement.innerText = "0" + hours;
+}else if (days < 10){
+    daysElement.innerText = "0" + days;
+}else{
+    return;
+}
 
 if (difference < 0) {
 prompt("")
