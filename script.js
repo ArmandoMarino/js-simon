@@ -23,7 +23,7 @@ const daysElement = document.getElementById("days");
 
 
 // data countdown del natale
-let countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
+let countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
 
 // funzione
 let christmasCounter = setInterval(function() {
