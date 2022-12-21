@@ -60,7 +60,7 @@ if(seconds < 10){
 }
 
 if (difference < 0) {
-prompt("")
+prompt("MERRY XMAS!");
 clearInterval(x);
 }
 }, 1000);
